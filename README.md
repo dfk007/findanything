@@ -1,26 +1,21 @@
-# 🔍 FindAnything
 
-Blazing-fast file/folder name finder for your Linux system with a sleek TUI (like LinUtil). Instantly search your entire filesystem with fzf + fd.
+# FindAnything
 
-## 🚀 One-line installer
+A universal Linux tool to fuzzy-search for files or folders by name across your entire system with TUI.
+
+## Usage
+
+- `findany <partial-name>` : prints best matches in console
+- `findanything <partial-name>` : launches interactive TUI to explore results
+
+Now with:
+- ✅ Multi-select in TUI
+- ✅ Preview top 50 lines of selected file
+
+## Install
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dfk007/findanything/main/install.sh | bash
 ```
 
-Supports:
-- ✅ Ubuntu / Debian
-- ✅ Fedora / RHEL
-- ✅ Arch / Manjaro
-
-## ✅ Usage
-### From Bash or Fish shell
-```bash
-findany
-```
-### Run full-screen TUI
-```bash
-findanything
-```
-
----
-Licensed under MIT.
+Supports Ubuntu/Debian, Fedora, Arch.

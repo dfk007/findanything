@@ -1,3 +1,6 @@
 function findany
-    fd . / --hidden --type f --type d --follow | fzf --prompt="FindAnything > " --height=40%
+    set query $argv[1]
+    echo "FOUND Best Match of $query :"
+    fd $query / --hidden --type f --type d --follow | head -n 10 | nl
+    echo "----------------------------------"
 end
